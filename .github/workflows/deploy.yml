@@ -6,6 +6,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   build-and-deploy:
@@ -14,17 +16,20 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       
-      - name: Build Jekyll site
-        run: |
-          docker run \
-          -v $PWD:/srv/jekyll \
-          -v $PWD/_site:/srv/jekyll/_site \
-          jekyll/builder:latest \
-          jekyll build
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      
+      - name: Build with Jekyll
+        # 使用官方Jekyll action，避免权限问题
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+      
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './_site'
       
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
-          publish_branch: gh-pages
+        uses: actions/deploy-pages@v4
