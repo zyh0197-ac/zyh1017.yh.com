@@ -1,1 +1,107 @@
-
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>雨痕/兔子de自介</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #333;
+        }
+        
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 2px solid #666;
+        }
+        
+        .name {
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+        }
+        
+        .content {
+            margin-bottom: 25px;
+            padding: 0 10px;
+        }
+        
+        .line {
+            margin-bottom: 12px;
+            font-size: 1rem;
+        }
+        
+        .friends-section {
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+        
+        .friends-title {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: #ccc;
+        }
+        
+        .friend-list {
+            font-size: 1rem;
+        }
+        
+        .footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            font-size: 0.9rem;
+            color: #999;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="698574f2eee738a2970021e3ea8feca5.jpg" alt="头像" class="avatar" onerror="this.style.display='none'">
+        <div class="name">雨痕/兔子</div>
+    </div>
+    
+    <div class="content">
+        <div class="line">只在意 @qrh @hmy</div>
+        <div class="line">二次>一次>三次</div>
+        <div class="line">朋友圈三次>二次>一次</div>
+        <div class="line">恶俗b 朋友圈废话多</div>
+        
+        <div class="friends-section">
+            <div class="friends-title">洗衣粉</div>
+            <div class="friend-list">
+                @阿翼 @九六夜 @阮熙 @稚时 @小鱼 @寒生 @小棘 @小萱 @萧萧 @懔栀 @我家貓很乖 @枭原 @小熙
+            </div>
+        </div>
+        
+        <div class="line">NG 大众雷 小马宝莉 品客</div>
+        <div class="line">加我全补</div>
+    </div>
+    
+    <div class="footer">
+        最后更新: 2023年
+    </div>
+</body>
+</html>
