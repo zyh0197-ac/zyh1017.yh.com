@@ -1,7 +1,0 @@
-version: 2
-updates:
-  # 更新 GitHub Actions
-  - package-ecosystem: "github-actions"
-    directory: "/"
-    schedule:
-      interval: "weekly"
